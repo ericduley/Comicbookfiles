@@ -6,8 +6,12 @@ GENERAL
   overflow: auto;
 }
 */
-/*body {font-family: 'Open Sans', sans-serif}*/
+body 
+    {
+        margin: 0 0;  
+    }
 
+    
 
 #wrapper {max-width: 940px;
           margin: 0 auto;
@@ -65,7 +69,18 @@ h2 {font-size: 1.75rem;
     font-weight: bold;}
 }
 
+section
+{
 
+   /*background-color: #EE82EE;*/
+/*  background-image: url('../img/panels.jpg')*/
+   /*background-image: url('../img/blank_panels.jpg')*/
+
+ /*background-repeat: repeat;*/
+  /* background-position: center center;
+  background-size: 100px;
+  margin: 0 0;*/
+}
 
 
 /*********************
@@ -123,6 +138,11 @@ PAGE: COLLECTION
     /*font-size: 5.75%;*/
     color: #111;}
 
+    .main_bg
+    {
+        background-image: url('../img/panels.jpg');
+        background-size: 25px;
+    }   
 
 /*********************
 PAGE: ABOUT
@@ -161,8 +181,11 @@ COLORS
 *********************/
 
 /*site body*/
-body {background-color: #EE82EE;
-    color: #999;}
+body {
+
+/*  background-color: #EE82EE;
+    color: #999;*/
+  }
 
 /*header*/
  header {background: #9400D3;

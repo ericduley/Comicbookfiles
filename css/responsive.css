@@ -25,6 +25,11 @@ PAGE: COLLECTION
     #gallery li:nth-child(4n) {
         clear: left;
 }
+
+.main_bg
+    {
+        background-size: 50px;
+    }  
     
  /*********************
 PAGE: ABOUT
@@ -39,7 +44,12 @@ PAGE: ABOUT
   
 /*********************
 HEADER
-*********************/           
+*********************/
+
+.main_bg
+    {
+        background-size: 100px;
+    }             
 
 
 nav {
@@ -52,10 +62,9 @@ nav {
 
     }
 
-#logo {
-               float: left;
-                /*margin: 5%;
-                width: 45%;*/
+#logo {  float: left;
+        /*margin: 5%;
+          width: 45%;*/
       }
             
             h1 {
@@ -71,6 +80,7 @@ nav {
         margin-bottom: 10px;
     }
 }
+
         
     
     

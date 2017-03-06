@@ -35,8 +35,8 @@ header {float: left;
 #header {
     background-image: url('../img/eye-ds.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100px;
+    background-position: right top;
+    background-size: 80px;
     margin: 0 0;
   
     }
@@ -46,8 +46,8 @@ header {float: left;
 
 h1 
    { 
-    margin: 0 0;
-    font-size: 1.75em;
+    margin: 15px 80px 0 0;
+    font-size: 1.35em;
     font-weight: normal;
     line-height: 0.8em;
     text-shadow: 0 1px 0 #ccc,
@@ -64,9 +64,9 @@ h1
                0 20px 20px rgba(0,0,0,.15);
 }
 
-h2 {font-size: 1.75rem;
-    margin: -5px 0 0;
-    font-weight: bold;}
+h2 {font-size: .90rem;
+    margin: 15px 75px 0 -5px;
+    font-weight: normal;}
 }
 
 section

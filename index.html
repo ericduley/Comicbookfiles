@@ -3,85 +3,81 @@
     <head>
         <meta charset="utf-8">
         <title>Comic Book Files</title>
-        <!-- need different fonts -->
+       <!--  <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">  -->
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/responsive.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-           <header id="header"> 
-           <a href="index.html" id="logo"><!--do i need this to be a link-->
-            <h1>Comic Book Files</h1>
-            <h2>Just another comic book site</h2>
-           </a>
-           <nav>
-            <ul>
-                <li><a href="index.html" class="selected">Collection</a></li>
+        <header id="header"> 
+             <a href="index.html" id="logo"><!--do i need this to be a link-->
+               <h1>Comic Book Files</h1>
+               <h2>Just another comic book site</h2>
+             </a>
+            <nav>
+              <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="character.html">Characters</a></li>
                 <li><a href="about.html">About</a></li>   
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-           </nav>
-        </header> 
-        
+              </ul>
+             </nav>
+        </header>        
     <body>
-      <div class="main_bg">
+      <div  class="main_bg">
         <section id="wrapper">
             <ul id="gallery">
-             <li>
+            
+              <li data-tilt >            
                 <a href="img/1-1.jpg">
-                    <img src="img/1-1.jpg" alt="">
-                    <p></p>
+                  <img src="img/1-1.jpg" alt="">
+                </a>              
+              </li>
+                
+              <li data-tilt>
+                <a href="img/1-2.jpg">
+                  <img src="img/1-2.jpg" alt="">
+                </a>
+              </li>
+                
+              <li data-tilt>
+                <a href="img/1-5.jpg">
+                  <img src="img/1-5.jpg" alt="">
+                </a>  
+              </li>
+                
+              <li data-tilt>
+                <a href="img/v-1.jpg">
+                  <img src="img/v-1.jpg" alt="">
                 </a>
              </li>
                 
-             <li>
-                  <a href="img/1-2.jpg">
-                    <img src="img/1-2.jpg" alt="">
-                    <p></p>
-                </a>
-             </li>
-                
-             <li>
-                  <a href="img/1-5.jpg">
-                    <img src="img/1-5.jpg" alt="">
-                    <p></p>
-                </a>
-             </li>
-                
-             <li>
-                  <a href="img/v-1.jpg">
-                    <img src="img/v-1.jpg" alt="">
-                    <p></p>
-                </a>
-             </li>
-                
-             <li>
-                  <a href="img/1-4.jpg">
-                    <img src="img/1-4.jpg" alt="">
-                    <p></p>
+             <li data-tilt>
+                <a href="img/1-4.jpg">
+                  <img src="img/1-4.jpg" alt="">
                 </a>
              </li> 
 
- 		     <li>
-                  <a href="img/1-6.jpg">
-                    <img src="img/1-6.jpg" alt="">
-                    <p></p>
+ 		         <li data-tilt>
+                <a href="img/1-6.jpg">
+                  <img src="img/1-6.jpg" alt="">
                 </a>
              </li> 
-                
-            </ul>        
+           </ul>        
         </section>
-        <footer>
-           <a href="http://twitter.com/comicbookfiles">
-           <img src="img/soc-icon/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a> 
-           <a href="https://www.facebook.com/Comic-Book-Files-442789329152595/">
-           <img src="img/soc-icon/facebook-wrap.png" alt="Twitter Logo" class="social-icon"></a>  
-           <a href="http://comicbookfiles.blogspot.com/">  
-           <img src="img/soc-icon/blogger-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-           <a href="https://www.instagram.com/comicbookfiles">
-           <img src="img/soc-icon/instagram-wrap.png" alt="Twitter Logo" class="social-icon"></a>    
-          <p>&copy; 2016 Eric Duley</p>
-        </footer>
+          <footer>
+             <a href="http://twitter.com/comicbookfiles">
+             <img src="img/soc-icon/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a> 
+             <a href="https://www.facebook.com/Comic-Book-Files-442789329152595/">
+             <img src="img/soc-icon/facebook-wrap.png" alt="Twitter Logo" class="social-icon"></a>  
+             <a href="http://comicbookfiles.blogspot.com/">  
+             <img src="img/soc-icon/blogger-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+             <a href="https://www.instagram.com/comicbookfiles">
+             <img src="img/soc-icon/instagram-wrap.png" alt="Twitter Logo" class="social-icon"></a>    
+            <p>&copy; 2016 Eric Duley</p>
+          </footer>
       </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="jquery/tilt.js"></script> <!-- Load Tilt.js library -->
     </body>
 </html>
 

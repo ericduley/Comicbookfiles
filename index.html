@@ -1,70 +1,100 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Comic Book Files</title>
-       <!--  <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">  -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<html>      
+  <head>
+    <meta charset="utf-8">
+    <title>Comic Book Files</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+       <body class="page_bg">
         <header id="header"> 
+          <img class="header-icon" src="img/eye-ds.jpg"/>
              <a href="index.html" id="logo"><!--do i need this to be a link-->
                <h1>Comic Book Files</h1>
                <h2>Just another comic book site</h2>
              </a>
-            <nav>
-              <ul>
-                <li><a href="index.html" class="selected">Home</a></li>
-                <li><a href="character.html">Characters</a></li>
-                <li><a href="about.html">About</a></li>   
-              </ul>
-             </nav>
-        </header>        
-    <body>
-      <div  class="main_bg">
-        <section id="wrapper">
-            <ul id="gallery">
-            
-              <li data-tilt >            
-                <a href="img/1-1.jpg">
-                  <img src="img/1-1.jpg" alt="">
-                </a>              
+          <nav>
+             <ul>
+               <li><a href="index.html" class="selected">Home</a></li>
+               <li><a href="character.html">Characters</a></li>
+               <li><a href="about.html">About</a></li>   
+             </ul>
+           </nav>
+        </header>  
+      <div  >
+        <div id="wrapper">
+          <ul id="gallery">
+             <li data-tilt>  
+                <div class="description-wrap">          
+                 <img class="cover"  src="img/1-1.jpg" alt="">
+                    <div class="description">
+                      <p>
+                        Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
+                      </p>
+                    </div>
+                 </div>
+               </li>
+                
+              <li data-tilt>
+                <div class="description-wrap">  
+                 <img class="cover" src="img/1-2.jpg" alt="">
+                  <div class="description">
+                     <p>
+                        Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
+                      </p>
+                    </div>
+                 </div>
               </li>
                 
               <li data-tilt>
-                <a href="img/1-2.jpg">
-                  <img src="img/1-2.jpg" alt="">
-                </a>
+                <div class="description-wrap">
+                  <img class="cover" src="img/1-5.jpg" alt="">
+                   <div class="description">
+                     <p>
+                        Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
+                      </p>
+                    </div>
+                 </div>
               </li>
                 
               <li data-tilt>
-                <a href="img/1-5.jpg">
-                  <img src="img/1-5.jpg" alt="">
-                </a>  
-              </li>
-                
-              <li data-tilt>
-                <a href="img/v-1.jpg">
-                  <img src="img/v-1.jpg" alt="">
-                </a>
+                <div class="description-wrap"> 
+                  <img class="cover" src="img/v-1.jpg" alt="">
+                  <div class="description">
+                     <p>
+                        Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
+                      </p>
+                    </div>
+                 </div>
              </li>
                 
              <li data-tilt>
-                <a href="img/1-4.jpg">
-                  <img src="img/1-4.jpg" alt="">
-                </a>
+                <div class="description-wrap"> 
+                  <img class="cover" src="img/1-4.jpg" alt="">
+                  <div class="description">
+                     <p>
+                        Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
+                      </p>
+                    </div>
+                 </div>
              </li> 
 
  		         <li data-tilt>
-                <a href="img/1-6.jpg">
-                  <img src="img/1-6.jpg" alt="">
-                </a>
+                <div class="description-wrap"> 
+                  <img class="cover" src="img/1-6.jpg" alt="">
+                  <div class="description">
+                     <p>
+                        Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
+                      </p>
+                    </div>
+                 </div>
              </li> 
            </ul>        
-        </section>
-          <footer>
+        </div>
+          <footer class="ftmain">
              <a href="http://twitter.com/comicbookfiles">
              <img src="img/soc-icon/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a> 
              <a href="https://www.facebook.com/Comic-Book-Files-442789329152595/">
@@ -76,9 +106,23 @@
             <p>&copy; 2016 Eric Duley</p>
           </footer>
       </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="jquery/tilt.js"></script> <!-- Load Tilt.js library -->
-    </body>
+        <div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script src="jquery/tilt.js"></script>
+          <script type="text/javascript">
+
+             $(".description-wrap img").click(function()
+                {
+                  $(this).siblings().show()
+                }
+              );
+                  $(".description-wrap .description").click(function()
+                {
+                  $(this).hide()
+                }
+              );
+          </script>
+        </body>
 </html>
 
 

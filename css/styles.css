@@ -1,56 +1,76 @@
 /*********************
 GENERAL
 *********************/
-/** {
+* {
   box-sizing: border-box;
-  overflow: auto;
 }
-*/
-body 
-    {
-        margin: 0 0;  
-    }
+
+
+
+* {
+  margin: 0 0;  
+}
 
     
 
-#wrapper {max-width: 940px;
-          margin: 0 auto;
-          padding: 0 5%;}
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+#brief {
+  padding: 10% 0 0 0;
 
-a {text-decoration: none;}
+  margin-top: 0;
+}
 
-img {max-width: 100%;}
+a {
+ text-decoration: none;
+}
 
-h3 {margin: 0 0 1em 0;}
+.cover{
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
 
 /*********************
 HEADING
 *********************/
 
-header {float: left;
-    margin: 0 0 30px 0;
-    padding: 5px 0 0 0;
-    width: 100%;
-  }
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
 #header {
-    background-image: url('../img/eye-ds.jpg');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 80px;
-    margin: 0 0;
-  
-    }
+  background-image: url('../img/panels.jpg');
+  background-repeat: repeat;
+  background-position: right top;
+  background-size: 80px;
+  margin: 0 0;  
+}
+
+.header-icon {
+  float: left;
+  height: 65px;
+  margin: 0 0 0 0;
+}
 
 #logo {text-align: center;
        margin: 0;}
 
-h1 
-   { 
-    margin: 15px 80px 0 0;
-    font-size: 1.35em;
-    font-weight: normal;
-    line-height: 0.8em;
-    text-shadow: 0 1px 0 #ccc,
+h1 { 
+  margin: 10px 0 0 0;
+  font-size: 1.35em;
+  font-weight: normal;
+  line-height: 0.8em;
+  display: block;
+  text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
@@ -64,22 +84,10 @@ h1
                0 20px 20px rgba(0,0,0,.15);
 }
 
-h2 {font-size: .90rem;
-    margin: 15px 75px 0 -5px;
-    font-weight: normal;}
-}
-
-section
-{
-
-   /*background-color: #EE82EE;*/
-/*  background-image: url('../img/panels.jpg')*/
-   /*background-image: url('../img/blank_panels.jpg')*/
-
- /*background-repeat: repeat;*/
-  /* background-position: center center;
-  background-size: 100px;
-  margin: 0 0;*/
+h2 {
+  font-size: 1em;
+  margin: 10px 0 10px 0;
+  font-weight: normal;}
 }
 
 
@@ -87,18 +95,26 @@ section
 NAVIGATION
 *********************/
 
-nav{text-align: center;
-    padding: 10px 0;
-    margin: 20px 0 0;}
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
 
-nav ul { list-style: none;
-    margin: 0 10px;
-    padding: 0;}
+nav ul {
+ list-style: none;
+ text-align: center;
+ /*margin: 0 18%;*/
+ /*padding: 0 0 0 0;*/
+}
 
-nav li  {display: inline-block;}
+nav li {
+  display: inline-block;
+}
 
-nav a {font-weight: 800;
-    padding: 15px 10px;
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
 }
 
 
@@ -106,105 +122,129 @@ nav a {font-weight: 800;
 FOOTER
 *********************/
 
-footer {font-size: 0.75em;
-    text-align: center;
-    clear: both;
-    padding-top: 25px;
-    /*width: 100%;*/
-    /*color: #red;
-  */}
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 25px;
+  bottom:0;
+  left:0;
+  width: 100%;
+}
 
-.social-icon {width: 20px;
-    height: 20px;
-    margin: 0 5px;}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
 
 
 /*********************
-PAGE: COLLECTION
+PAGE: MAIN
 *********************/
 
-#gallery {margin: 0;
-          padding: 0;
-          list-style: none;}
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-#gallery li {float: left;
-    width: 45%;
-    margin: 2.5%;
-    background-color: #f5f5f5;
-    color: #bdc3c7;}
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  color: #bdc3c7;
+}
 
-#gallery li a p {margin: 0;
-    padding: 5%;
-    /*font-size: 5.75%;*/
-    color: #111;}
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  /*color: #111;*/
+}
 
-    .main_bg
-    {
-        background-image: url('../img/panels.jpg');
-        background-size: 25px;
-    }   
+ .page_bg {
+   background-image: url('../img/paper2.jpg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+} 
+
+/*********************
+PAGE: IMAGE DISCRIPTION
+*********************/ 
+
+.description-wrap {
+  position: relative;
+}
+
+.description-wrap .description {
+  position: absolute;
+  top: 0;
+  left 0;
+  width: 99%;
+  padding: 2%;
+  background: rgba(0,0,0,.7);
+  height: 99%;
+  display: none;
+ }
 
 /*********************
 PAGE: ABOUT
 *********************/
 
-.profile-photo
-{display: block;
-    max-width: 150px;
-    margin: 0 auto 30px;
-    border-radius: 100%;}
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 0 0 30px;
+  border-radius: 100%;
+  padding-top: 15px;
+}
 
-/*********************
-CONTACTS
-*********************/
+.about-me {
+  margin: 0 0 0 0;
+}
 
-/*.contact-info 
-    {list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 0.9em;}*/
-
-/*.contact-info a {
-    display: block;
-    min-height: 20px;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    padding: 0 0 0 30px;
-    margin: 0 0 10px;}
-    */
-    /*.contact-info li.phone a {background-image: url('../img/phone.png');}
-    .contact-info li.mail a {background-image: url('../img/mail.png');}*/
-   /* .contact-info li.twitter a {background-image: url('../img/twitter.png');}*/
- 
-/*********************
-COLORS
-*********************/
 
 /*site body*/
-body {
 
-/*  background-color: #EE82EE;
-    color: #999;*/
-  }
+
+/*********************
+COLOR
+*********************/
+
 
 /*header*/
- header {background: #9400D3;
- border-color: #599a68;}
+
+header {
+ background: #F5DEB3;
+ border-color: #599a68;
+}
 
 /*nav background on moble*/
-nav {background: #599a68;}
+nav {
+ background: #599a68;
+}
 
 /*logo text*/
-h1, h2{color: red;}
+h1, h2 {
+  color: #FF0000;
+}
 
 /*links*/
 a {color: #6ab47b;}
 
 /*nav links*/
-nav a, a nav:visited { color:#fff;}
+nav a, a nav:visited {
+ color: #00FF7F;
+}
 
 /*selected nav link*/
-nav a.selected, nav a:hover {color: #32673f;}
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
 /*footer*/
-footer {background-color: #C71585;
-    color: #999;}
+
+footer {
+  background-color: #F5DEB3;
+  color: #999;
+}

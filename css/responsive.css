@@ -1,109 +1,159 @@
 @media screen and (min-width: 480px){
 
     
-    /*********************
-    TWO COLUMB LATOUT
-    *********************/
+ /*********************
+TWO COLUMB LATOUT
+ *********************/
     
-    #primary {
-        width: 50%;
-        float: left;
-    }
-    #secondary { 
-        width: 40%;
-        float: right;
-    }
+#primary {
+  width: 50%;
+  float: left;
+}
+
+#secondary { 
+  width: 40%;
+  float: right;
+}
     
 /*********************
-PAGE: COLLECTION
+PAGE: MAIN
 *********************/
+
     
-    #gallery li {
-        width: 28.3333%;
+#gallery li {
+  width: 28.3333%;
 }
 
-    #gallery li:nth-child(4n) {
-        clear: left;
+#gallery li:nth-child(4n) {
+  clear: left;
 }
 
-.main_bg
-    {
-        background-size: 50px;
-    }  
-    
+/*.page_bg {
+  background-size: 100%;
+ }  
+    */
 #header {
-    background-position: right top;
+  background-position: right top;
+}
 
-    }
-
+/*.header-icon {
+   position: absolute;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding-bottom: 5px;
+}*/
             
-            h1 {
-                font-size: 1.75em;
-                margin: 10px 40px 15px 0;
-            }
+h1 {
+  font-size: 1.75em;
+  margin: 10px 40px 15px 0;
+}
             
-            h2 {
-                font-size: 1em;
-                margin: 10px 40px -5px 0;
-
+h2 {
+  font-size: 1em;
+  margin: 10px 40px -5px 0;
+}
 
  /*********************
 PAGE: ABOUT
 *********************/
     
-    .profile-photo {
-        float: left;
-        margin: 0 5% 100px 0;}
+.profile-photo {
+  float: left;
+  display: block;
+  max-width: 150px;
+  margin: 0 0 0 30px;
+  border-radius: 100%;
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 768px) {          /*680px 680px 680px too small*/
-  
+
+
+
+ 
 /*********************
 HEADER
 *********************/
 
 #header {
-    background-position: center;
-    background-size: 100px;
+  background-position: center;
+  background-size: 100px;
 }
 
-.main_bg
-    {
-        background-size: 100px;
-    }             
+.header-icon {
+   position: absolute;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding-bottom: 5px;
+   height: 100px;
+}
+
+.page_bg {
+  background-size: 100%;
+}             
 
 
 nav {
-                background: none;
-                float: right;
-                font-size: 1.125em;
-                margin-right: 5%;
-                text-align: right;
-                width: 45%;                            
+  background: none;
+  float: right;
+  font-size: 1.125em;
+  margin-right: 5%;
+  margin-top: 2%;
+  text-align: right;
+  width: 45%;                            
+}
 
-    }
-
-#logo {  float: left;
-        /*margin: 5%;
-          width: 45%;*/
-      }
-            
-header {
-        border-bottom: 5px solid #599a68;
-        margin-bottom: 10px;
-    }
-                h1 {
-                font-size: 2.5em;
-                margin: 10px 10px 0 25px;
-            }
-            
-            h2 {
-                font-size: 1.25em;
-                margin: 15px 10px 10px 0;
-            } 
-
+#logo {  
+  float: left;
 }
             
+header {
+  border-bottom: 5px solid #599a68;
+  margin-bottom: 10px;
+    }
+
+h1 {
+  font-size: 2.5em;
+  margin: 10px 80px 0 65px;
+}
+            
+h2 {
+  font-size: 1.25em;
+  margin: 15px 10px 10px 0;
+} 
+
+/*********************
+FOOTER
+*********************/
+
+footer.ftmain {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+
+}
+
+footer.ftcharacter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+footer.ftabout {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
 
 
     

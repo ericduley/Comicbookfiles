@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <title>Comic Book Files</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
        <body class="page_bg">
-        <header id="header"> 
-          <img class="header-icon" src="img/eye-ds.jpg"/>
-             <a href="index.html" id="logo"><!--do i need this to be a link-->
+        <header> 
+          <img class="header-icon " id="header-img" src="img/eye.png" alt="The Eye of Agamotto"/>
+             <a href="index.html" id="logo">
                <h1>Comic Book Files</h1>
                <h2>Just another comic book site</h2>
              </a>
@@ -24,12 +23,12 @@
              </ul>
            </nav>
         </header>  
-      <div  >
+      <div id="gbody" >
         <div id="wrapper">
           <ul id="gallery">
              <li data-tilt>  
                 <div class="description-wrap">          
-                 <img class="cover"  src="img/1-1.jpg" alt="">
+                 <img class="cover"  src="img/1-1.jpg" alt="Avengers issue 1 cover">
                     <div class="description">
                       <p>
                         Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
@@ -40,7 +39,7 @@
                 
               <li data-tilt>
                 <div class="description-wrap">  
-                 <img class="cover" src="img/1-2.jpg" alt="">
+                 <img class="cover" src="img/1-2.jpg" alt="Batman Dark Knight Returns cover">
                   <div class="description">
                      <p>
                         Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
@@ -51,7 +50,7 @@
                 
               <li data-tilt>
                 <div class="description-wrap">
-                  <img class="cover" src="img/1-5.jpg" alt="">
+                  <img class="cover" src="img/1-5.jpg" alt="Incredible Hulk issue 128 cover">
                    <div class="description">
                      <p>
                         Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
@@ -62,7 +61,7 @@
                 
               <li data-tilt>
                 <div class="description-wrap"> 
-                  <img class="cover" src="img/v-1.jpg" alt="">
+                  <img class="cover" src="img/v-1.jpg" alt="Avengers issue 57 cover">
                   <div class="description">
                      <p>
                         Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
@@ -73,7 +72,7 @@
                 
              <li data-tilt>
                 <div class="description-wrap"> 
-                  <img class="cover" src="img/1-4.jpg" alt="">
+                  <img class="cover" src="img/1-4.jpg" alt="Adventure Comics issue 359">
                   <div class="description">
                      <p>
                         Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
@@ -84,7 +83,7 @@
 
  		         <li data-tilt>
                 <div class="description-wrap"> 
-                  <img class="cover" src="img/1-6.jpg" alt="">
+                  <img class="cover" src="img/1-6.jpg" alt="Inhumans trade paperback cover">
                   <div class="description">
                      <p>
                         Vivamus vitae pulvinar metus, eu consectetur quam. Orci varius natoque penatibus et magnis dis parturient montes.
@@ -94,7 +93,8 @@
              </li> 
            </ul>        
         </div>
-          <footer class="ftmain">
+          <footer>
+              <div class="social">
              <a href="http://twitter.com/comicbookfiles">
              <img src="img/soc-icon/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a> 
              <a href="https://www.facebook.com/Comic-Book-Files-442789329152595/">
@@ -104,24 +104,13 @@
              <a href="https://www.instagram.com/comicbookfiles">
              <img src="img/soc-icon/instagram-wrap.png" alt="Twitter Logo" class="social-icon"></a>    
             <p>&copy; 2016 Eric Duley</p>
+            </div>
           </footer>
       </div>
         <div>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
           <script src="jquery/tilt.js"></script>
-          <script type="text/javascript">
-
-             $(".description-wrap img").click(function()
-                {
-                  $(this).siblings().show()
-                }
-              );
-                  $(".description-wrap .description").click(function()
-                {
-                  $(this).hide()
-                }
-              );
-          </script>
+          <script src="jquery/scripts.js"></script>
         </body>
 </html>
 

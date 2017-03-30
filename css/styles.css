@@ -3,33 +3,23 @@ GENERAL
 *********************/
 * {
   box-sizing: border-box;
+  margin: 0 0;
 }
 
-
-
-* {
-  margin: 0 0;  
-}
-
-    
 
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 5%;
-}
-#brief {
-  padding: 10% 0 0 0;
+  }
 
-  margin-top: 0;
+html{
+  padding: 0 0 90px;
+  display: block;
 }
+
 
 a {
  text-decoration: none;
-}
-
-.cover{
-  max-width: 100%;
 }
 
 h3 {
@@ -42,30 +32,21 @@ HEADING
 
 header {
   float: left;
-  margin: 0 0 30px 0;
+  margin: 0 0 10px 0;
   padding: 5px 0 0 0;
   width: 100%;
+  border-style: solid;
+  border-color:   #00FFFF;
+  border-width: 5px 5px 0 5px; 
 }
 
-#header {
-  background-image: url('../img/panels.jpg');
-  background-repeat: repeat;
-  background-position: right top;
-  background-size: 80px;
-  margin: 0 0;  
+#logo {
+  text-align: center;
+  margin: 0 0 5px 5px;
 }
-
-.header-icon {
-  float: left;
-  height: 65px;
-  margin: 0 0 0 0;
-}
-
-#logo {text-align: center;
-       margin: 0;}
 
 h1 { 
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 78px;
   font-size: 1.35em;
   font-weight: normal;
   line-height: 0.8em;
@@ -86,10 +67,31 @@ h1 {
 
 h2 {
   font-size: 1em;
-  margin: 10px 0 10px 0;
-  font-weight: normal;}
+  margin: 10px 0 -5px 78px;
+  font-weight: normal;
 }
 
+/*********************
+HEADER
+*********************/
+
+.header-icon {
+  float: left;
+  height: 90px;
+  margin: 0 0 0 0;
+}
+/*This is the CSS3 that will spin the Eye of Agamotto when clicked*/
+.spin { 
+    position: absolute;
+    height: 90px;
+    margin:0 0 0 0;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 /*********************
 NAVIGATION
@@ -98,14 +100,15 @@ NAVIGATION
 nav {
   text-align: center;
   padding: 10px 0;
-  margin: 20px 0 0;
+  margin: 2px 0 0;
+  border-color:   #00FFFF;
+  border-width: 5px 0 5px 0; 
+
 }
 
 nav ul {
  list-style: none;
  text-align: center;
- /*margin: 0 18%;*/
- /*padding: 0 0 0 0;*/
 }
 
 nav li {
@@ -115,27 +118,6 @@ nav li {
 nav a {
   font-weight: 800;
   padding: 15px 10px;
-}
-
-
-/*********************
-FOOTER
-*********************/
-
-footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 25px;
-  bottom:0;
-  left:0;
-  width: 100%;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
 }
 
 
@@ -167,9 +149,15 @@ PAGE: MAIN
    background-repeat: no-repeat;
    background-size: 100% 100%;
 } 
+.cover{
+  max-width: 100%;
+  border-style: solid;
+  border-color: #00FFFF;
+  border-width: 5px; 
+}
 
 /*********************
-PAGE: IMAGE DISCRIPTION
+PAGE: IMAGE DESCRIPTION
 *********************/ 
 
 .description-wrap {
@@ -179,7 +167,7 @@ PAGE: IMAGE DISCRIPTION
 .description-wrap .description {
   position: absolute;
   top: 0;
-  left 0;
+  left:0;
   width: 99%;
   padding: 2%;
   background: rgba(0,0,0,.7);
@@ -187,24 +175,46 @@ PAGE: IMAGE DISCRIPTION
   display: none;
  }
 
+ /*********************
+PAGE: CHARACTER
+*********************/
+
 /*********************
 PAGE: ABOUT
 *********************/
 
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 0 0 30px;
-  border-radius: 100%;
-  padding-top: 15px;
+/*********************
+FOOTER
+*********************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-style: solid;
+  border-color:   #00FFFF;
+  border-width: 5px;
+  color: #999; 
 }
 
-.about-me {
-  margin: 0 0 0 0;
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
-
-/*site body*/
+.social {
+  display: inline-block;
+  border-style: solid;
+  border-color:   #00FFFF;
+  border-width: 5px; 
+  padding: 15px 5px 5px 5px; 
+}
 
 
 /*********************
@@ -212,16 +222,10 @@ COLOR
 *********************/
 
 
-/*header*/
-
-header {
- background: #F5DEB3;
- border-color: #599a68;
-}
-
 /*nav background on moble*/
 nav {
- background: #599a68;
+ background: none;
+ border-style: solid;
 }
 
 /*logo text*/
@@ -242,9 +246,6 @@ nav a.selected, nav a:hover {
   color: #32673f;
 }
 
-/*footer*/
 
-footer {
-  background-color: #F5DEB3;
-  color: #999;
-}
+
+

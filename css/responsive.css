@@ -14,6 +14,16 @@ TWO COLUMB LATOUT
   width: 40%;
   float: right;
 }
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  border-style: solid;
+  border-color: #00FFFF;
+  border-width: 5px; 
+  }
     
 /*********************
 PAGE: MAIN
@@ -27,24 +37,7 @@ PAGE: MAIN
 #gallery li:nth-child(4n) {
   clear: left;
 }
-
-/*.page_bg {
-  background-size: 100%;
- }  
-    */
-#header {
-  background-position: right top;
-}
-
-/*.header-icon {
-   position: absolute;
-   margin: auto;
-   top: 0;
-   left: 0;
-   right: 0;
-   padding-bottom: 5px;
-}*/
-            
+           
 h1 {
   font-size: 1.75em;
   margin: 10px 40px 15px 0;
@@ -55,18 +48,16 @@ h2 {
   margin: 10px 40px -5px 0;
 }
 
+ 
+  /*********************
+PAGE: CHARACTER
+*********************/
+
+
  /*********************
 PAGE: ABOUT
 *********************/
     
-.profile-photo {
-  float: left;
-  display: block;
-  max-width: 150px;
-  margin: 0 0 0 30px;
-  border-radius: 100%;
-  padding-top: 15px;
-}
 
 @media screen and (min-width: 768px) {          /*680px 680px 680px too small*/
 
@@ -77,11 +68,6 @@ PAGE: ABOUT
 HEADER
 *********************/
 
-#header {
-  background-position: center;
-  background-size: 100px;
-}
-
 .header-icon {
    position: absolute;
    margin: auto;
@@ -89,7 +75,7 @@ HEADER
    left: 0;
    right: 0;
    padding-bottom: 5px;
-   height: 100px;
+   height: 125px;
 }
 
 .page_bg {
@@ -98,23 +84,32 @@ HEADER
 
 
 nav {
-  background: none;
   float: right;
   font-size: 1.125em;
   margin-right: 5%;
   margin-top: 2%;
-  text-align: right;
-  width: 45%;                            
+  text-align: right; 
+  border-width: 5px; 
 }
 
 #logo {  
   float: left;
+  text-align: center;
+  margin: 0 0 5px 5px;
+  border-style: solid;
+  border-color: #00FFFF;
+  border-width: 5px; 
 }
             
 header {
-  border-bottom: 5px solid #599a68;
-  margin-bottom: 10px;
-    }
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  border-style: solid;
+  border-color: #00FFFF;
+  border-width: 5px; 
+  }
 
 h1 {
   font-size: 2.5em;
@@ -126,33 +121,7 @@ h2 {
   margin: 15px 10px 10px 0;
 } 
 
-/*********************
-FOOTER
-*********************/
 
-footer.ftmain {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-
-}
-
-footer.ftcharacter {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-}
-
-footer.ftabout {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-}
 
 
 
